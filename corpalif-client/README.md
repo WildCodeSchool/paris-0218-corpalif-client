@@ -2442,3 +2442,12 @@ In the future, we might start automatically compiling incompatible third-party m
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+
+## TRAVIS
+
+[![Travis master](https://img.shields.io/travis/WildCodeSchool/REPO.svg)](https://travis-ci.org/WildCodeSchool/REPO)
+[![Travis dev](https://img.shields.io/travis/WildCodeSchool/REPO/dev.svg)](https://travis-ci.org/WildCodeSchool/REPO/branches)
+
+## STANDARD JS
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
