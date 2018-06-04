@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "htmllint-cli": "0.0.7",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
@@ -17,6 +18,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:js": "standard | snazzy",
-    "lint:css": "stylelint 'client/style/**/*.css'"
+    "lint:css": "stylelint 'client/style/**/*.css'",
+    "lint:html": "htmllint 'client/**/*.html'"
   }
 }
