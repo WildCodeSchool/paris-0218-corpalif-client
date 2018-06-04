@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "htmllint-cli": "0.0.7",
+    "nodemon": "^1.17.5",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
@@ -17,10 +18,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "test_travis": "echo 'no tests'", //script qui s'appelait 'test' à la base et qui touche .travis.yml pour le lancer
+    "server": "nodemon server --ignore client",
+    "test_travis": "echo 'no tests'",
+    "_commentaire_sur_test_travis": "script qui s'appelait 'test' à la base et qui touche .travis.yml pour le lancer",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
     "lint:js": "standard | snazzy",
     "lint:css": "stylelint 'client/style/**/*.css'",
-    "lint:html": "htmllint 'client/**/*.html'" 
+    "lint:html": "htmllint 'client/**/*.html'"
   }
 }
