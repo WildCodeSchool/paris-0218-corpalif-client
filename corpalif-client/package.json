@@ -17,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
     "lint:js": "standard | snazzy",
     "lint:css": "stylelint 'client/style/**/*.css'",
     "lint:html": "htmllint 'client/**/*.html'"
