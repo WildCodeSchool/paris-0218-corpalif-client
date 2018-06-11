@@ -2445,8 +2445,8 @@ If you have ideas for more “How To” recipes that should be on this page, [le
 
 ## TRAVIS
 
-[![Travis master](https://img.shields.io/travis/WildCodeSchool/REPO.svg)](https://travis-ci.org/WildCodeSchool/REPO)
-[![Travis dev](https://img.shields.io/travis/WildCodeSchool/REPO/dev.svg)](https://travis-ci.org/WildCodeSchool/REPO/branches)
+[![Travis master](https://img.shields.io/travis/WildCodeSchool/paris-0218-corpalif-client.svg)](https://travis-ci.org/WildCodeSchool/paris-0218-corpalif-client)
+[![Travis dev](https://img.shields.io/travis/WildCodeSchool/paris-0218-corpalif-client/dev.svg)](https://travis-ci.org/WildCodeSchool/paris-0218-corpalif-client/branches)
 
 ## STANDARD JS
 
