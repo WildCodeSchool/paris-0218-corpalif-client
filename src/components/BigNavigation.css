@@ -1,0 +1,37 @@
+.BigNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+  background-color: rgb(16, 73, 73);
+}
+
+.BigNavigation li {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 1em;
+}
+
+.BigNavigation li a, .dropdown{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+  transition: color 0.4s;
+}
+
+.BigNavigation li:nth-child(-n+6):hover div div div a:hover {
+  color: white;
+}
+
+.BigNavigation li:nth-child(-n+6):hover div div div a:hover {
+  color: white;
+}
+
+.BigNavigation li:nth-child(-n+6):hover a, .dropdown:hover {
+  cursor: pointer;
+  color: rgb(51, 116, 103);
+  transition: color 0.4s;
+}
