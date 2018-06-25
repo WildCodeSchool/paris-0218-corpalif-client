@@ -1,28 +1,219 @@
-.App {
-  text-align: center;
+.App * {
+/*  text-align: center; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.Container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+
+/* Header 001, partie supérieur du header, logo, recherche, login, etc*/
+/* ////////////////////////////////////////////////////////////////// */
+
+.RowMargin { /*Décaler de 20px le margin de la 1ère row*/
+  margin: 0 20px;
+}
+
+.App-Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Section avec l'image de fond + l'annuaire  */
+/* ////////////////////////////////////////// */
+
+.Flex {
+  display: flex;
+}
+
+.AnnuaireH1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageParis {
+  /*height: 250px;*/
+  width: 100%;
+  padding: 100px 0;
+  background: url(./img/Paris_Fond_001.jpg) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover; 
+  /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%);*/
+}
+
+.ImageJustice {
+  /*height: 250px;*/
+  width: 100%;
+  background: url(./img/Justice_Fond_001.jpg) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover; 
+  /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%);*/
+}
+
+.App-RechercheCentrer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.AnnuaireH1 h1{
+  display: flex;
+  font-size: 56px;
+  font-weight: bold;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.test {
+  display:flex;
+  justify-content: center;
 }
 
-.App-intro {
-  font-size: large;
+.BlocGrisRecherche {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+  width: 100%;
+  margin: auto;
+
+  background-color: rgba(95, 95, 95, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.BarreRecherche {
+  display:flex;
+}
+
+.ButtonRecherche {
+  flex: 3;
+  margin: 0 20px;
+}
+
+.InputRechercheNom {
+  flex: 6;
+  margin: 0 20px;
+}
+
+.InputRechercheVille {
+  flex: 3;
+  margin: 0 20px;
+
+  height: 45px;
+}
+
+.IconLoupe {
+  display: flex;
+  justify-content: flex-end;
+
+  height: 90px;
+  width: 90px;
+}
+
+.ButtonRechercheSubmit {
+  flex: 1;
+  height: 90px;
+  width: 90px;
+
+  border: none;
+
+  background-color: rgb(204, 73, 73); /*Mettre un logo dessus*/
+  transition: background-color 0.3s;
+}
+
+.ButtonRechercheSubmit:hover {
+  background-color: rgb(142, 32, 33);
+  transition: background-color 0.4s;
+}
+
+/* Section avec La Corpalif 4 missions + dons  */
+/* /////////////////////////////////////////// */
+
+.App-CorpalifInformation {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 20px;
+
+  color: white;
+  background-color: rgb(16, 73, 73);
+}
+
+.CorpalifInformation h1 {
+  display: flex;
+  justify-content: center;
+
+  font-size: 56px;
+  font-weight: bold;
+}
+.CorpalifInformationCentrer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.DivFlollante {
+  display: flex;
+  flex-direction: column;
+}
+
+.CorpalifInformation h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.CorpalifInformation p, .CorpalifInformation li {
+  display: flex;
+}
+
+.CorpalifInformation p{
+  font-weight: bold;
+}
+
+.RedButtonEnSavoirPlus {
+  height: 30px;
+  margin-top: 20px;
+  padding: 0 15px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(204, 73, 73);
+  border: none;
+
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.RedButtonEnSavoirPlus:hover {
+  background-color: rgb(142, 32, 33);
+  color: rgb(201, 201, 201);
+
+  transition: color 0.4s;
+  transition: background-color 0.4s;
+}
+
+/* Slider */
+/* ////// */ 
+
+
+.carousel-item {
+  height: 300px;
+  width: 100%;
+  background: no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover; 
 }
