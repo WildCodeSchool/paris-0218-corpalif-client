@@ -1,0 +1,10 @@
+.App-LittleLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LittleLogo {
+  height: 40px;
+  width: 40px;
+}
