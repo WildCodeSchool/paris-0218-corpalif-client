@@ -1,0 +1,9 @@
+.BigNavigation li:nth-child(-n+6):hover div div div a:hover {
+  color: white;
+}
+
+.BigNavigation li:nth-child(-n+6):hover a, .dropdown:hover {
+  cursor: pointer;
+  color: rgb(51, 116, 103);
+  transition: color 0.4s;
+}
