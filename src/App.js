@@ -42,7 +42,7 @@ class App extends Component {
                 <Recherche />
               </div>
               <div className="App-Login col-2">
-                <RedButton />
+                <RedButton children="Espace adhérent" />
               </div>
 
             </div>
@@ -116,7 +116,7 @@ class App extends Component {
 
                       </div>
                     </div>
-                    <button className="RedButton">En savoir plus</button>
+                    <RedButton children="En savoir plus" />
                   </div>
                 </div>
               </div>
@@ -155,7 +155,7 @@ class App extends Component {
                               </div>
                             </div>
                             <div className="test">
-                              <button className="RedButton">Voir l'actualité</button>
+                              <RedButton children="Voir l'actualité" />
                             </div>
                           </div>
                         </div>
