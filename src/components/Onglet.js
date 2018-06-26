@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './Onglet.css';
 
-class Onglet extends Component {
-  render() {
-    return(
-      <li><a href="#Echanger">ECHANGER</a></li>
-    )
-  }
-}
+const Onglet = ({ children }) =>
+  <li className="Onglet">
+    <a>
+      {children}
+    </a>
+  </li>
+
 
 export default Onglet

@@ -1,8 +1,12 @@
-.BigNavigation li:nth-child(-n+6):hover div div div a:hover {
+.Onglet {
+  font-weight: bold;
   color: white;
+  text-decoration: none;
+
+  transition: color 0.4s;
 }
 
-.BigNavigation li:nth-child(-n+6):hover a, .dropdown:hover {
+.Onglet:hover {
   cursor: pointer;
   color: rgb(51, 116, 103);
   transition: color 0.4s;
