@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './OngletRouge.css';
 
-class OngletRouge extends Component {
-  render() {
-    return(
-      <li className="OngletRouge"><a href="#FormulaireAdmission">FORMULAIRE D'ADMISSION EN USP</a></li>
-    )
-  }
-}
+const OngletRouge = ({ children }) =>
+  <li className="OngletRouge">
+    <a href="#FormulaireAdmission">
+      {children}
+    </a>
+  </li>
+
 
 export default OngletRouge
