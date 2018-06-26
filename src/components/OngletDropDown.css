@@ -1,3 +1,17 @@
 .dropdown-menu {
   border-radius: 0;
 }
+
+.dropdown {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+
+  transition: color 0.4s;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+  color: rgb(51, 116, 103);
+  transition: color 0.4s;
+}
