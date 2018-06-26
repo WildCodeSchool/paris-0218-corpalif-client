@@ -7,6 +7,7 @@ import AccesRapide from './components/AccesRapide.js';
 import LittleLogo from './components/LittleLogo.js';
 import Recherche from './components/Recherche.js';
 import RedButton from './components/RedButton.js';
+import RedButtonDiv from './components/RedButtonDiv.js';
 import BigNavigation from './components/BigNavigation.js';
 
 // import Logo_Corpalif from "./img/Corpalif_Logo.png";
@@ -116,7 +117,7 @@ class App extends Component {
 
                       </div>
                     </div>
-                    <RedButton children="En savoir plus" />
+                    <RedButtonDiv children="En savoir plus"/>
                   </div>
                 </div>
               </div>
@@ -154,9 +155,7 @@ class App extends Component {
 
                               </div>
                             </div>
-                            <div className="test">
-                              <RedButton children="Voir l'actualité" />
-                            </div>
+                            <RedButtonDiv> Voir l'actualité </RedButtonDiv>
                           </div>
                         </div>
                       </div>
@@ -168,22 +167,6 @@ class App extends Component {
                   <div className="carousel-item text-center">
                     <h1>3 Carousel</h1> ...is centered!
                   </div>
-
-                  {/* <div className="carousel-item active">
-                    <img className="d-block w-100" src={Boite} alt="First slide" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src={Etoile} alt="Second slide" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src={EtoileMer} alt="Third slide" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src={Etoile} alt="Fourth slide" />
-                  </div>
-                  <div className="carousel-item">
-                    <img className="d-block w-100" src={EtoileMer} alt="Fifty slide" />
-                  </div> */}
                 </div>
           
                 <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
