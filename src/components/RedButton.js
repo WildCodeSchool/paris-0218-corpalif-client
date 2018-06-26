@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import "./RedButton.css";
 
-class RedButton extends Component {
-  render() {
-    return(
-      <button className="RedButton">Espace adhérent</button>
-    )
-  }
-}
+const RedButton = ({ children, ...rest }) => 
+  <button className="RedButton" {...rest}>
+    {children}
+  </button>
+
 
 export default RedButton
