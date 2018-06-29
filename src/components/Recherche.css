@@ -1,5 +1,27 @@
-.App-Recherche {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-control {
+  height: 30px;
+  font-size: 0.8em;
+  border-radius: 0;
+
+}
+
+.btn {
+  height: 30px;
+  font-size: 1.2em;
+  color: white;
+  background-color: rgb(204, 73, 73);
+  border-radius: 0;
+  border: none;
+  padding: 0 5px;
+
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(142, 32, 33);
+  color: rgb(201, 201, 201);
+
+  transition: color 0.4s;
+  transition: background-color 0.4s;
 }
