@@ -33,7 +33,7 @@ class App extends Component {
                 <Logo />
               </div>
               <div className="App-LittleNav col-5" >
-                <AccesRapide />
+                {/* <AccesRapide /> */}
               </div>
               <div className="App-LittleLogo col-1">
                 <LittleLogo />
@@ -136,7 +136,7 @@ class App extends Component {
                   <div className="carousel-item active">
                     <div className="d-block w-100 ImageJustice" alt="First slide">
                       <div className="row">
-                        <div className="App-CorpalifInformation ImageJustice">
+                        <div className="App-CorpalifInformation FondGris">
                           <div className="CorpalifInformation">
                             <h1>Manifeste de la SFAP</h1>
                             <div className="CorpalifInformationCentrer">
@@ -161,11 +161,63 @@ class App extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="carousel-item text-center">
-                    <h1>2 Carousel</h1> ...is centered!
+
+                  <div className="carousel-item">
+                    <div className="d-block w-100 ImageHopital" alt="First slide">
+                      <div className="row">
+                        <div className="App-CorpalifInformation FondGris">
+                          <div className="CorpalifInformation">
+                            <h1>L'hôpital public dans les déficits ?</h1>
+                            <div className="CorpalifInformationCentrer">
+                              <div className="DivFlollante">
+                                {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
+                                besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
+                                <br />
+                                <p>
+                                Lire le communiqué de presse de la SFAP <br />
+                                  « Comment mettre en œuvre une sédation profonde et continue maintenue jusqu'au décès ? ».<br />
+                                  Le guide de la Haute Autorité de Santé: disponible !<br /><br />
+                                </p>
+                                <p>
+                                  http://ow.ly/ogzc30iXy6e #SoinsPalliatifs
+                                </p>
+
+                              </div>
+                            </div>
+                            <RedButtonDiv> Voir l'actualité </RedButtonDiv>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="carousel-item text-center">
-                    <h1>3 Carousel</h1> ...is centered!
+
+                  <div className="carousel-item">
+                    <div className="d-block w-100 ImageAnciens" alt="First slide">
+                      <div className="row">
+                        <div className="App-CorpalifInformation FondGris">
+                          <div className="CorpalifInformation">
+                            <h1>L'information du patient</h1>
+                            <div className="CorpalifInformationCentrer">
+                              <div className="DivFlollante">
+                                {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
+                                besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
+                                <br />
+                                <p>
+                                  La question de l'information est souvent récurrente dans le cursus du cancéreux :<br />
+                                  lors du diagnostic, lors de l'échec thérapeutique, lors de la phase terminale.<br />
+                                  Le guide de la Haute Autorité de Santé: disponible !<br /><br />
+                                </p>
+                                <p>
+                                  http://ow.ly/ogzc30iXy6e #SoinsPalliatifs
+                                </p>
+
+                              </div>
+                            </div>
+                            <RedButtonDiv> Voir l'actualité </RedButtonDiv>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
           
@@ -178,8 +230,64 @@ class App extends Component {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-            </section>            
+            </section>      
 
+            <section>
+              <div className="row">
+                <div className="App-CorpalifInformation">
+                  <div className="CorpalifInformation">
+                    <h1 >La Corpalif</h1>
+                    <div className="CorpalifInformationCentrer">
+                      <div className="DivFlollante">
+
+                        {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
+                        besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
+                        <h2>Coordination régionale des soins palliatifs en Île-de-France</h2>
+                        <br />
+                        <p>4 missions au service des Franciliens</p>
+                        <ul>
+                          <li>● Assurer le lien entre les structures de prise en charge</li>
+                          <li>● Coordonner et participer au développement des soins palliatifs en Île-de-France</li>
+                          <li>● Susciter des échanges et des rencontres avec et entre ces professionnels</li>
+                          <li>● Promouvoir des actions d'information en soins palliatifs</li>
+                        </ul>
+
+                      </div>
+                    </div>
+                    <RedButtonDiv children="En savoir plus"/>
+                  </div>
+                </div>
+              </div>
+            </section>      
+
+            {/* <footer>
+              <div className="row">
+                <div className="App-Footer">
+                  <p>La Corpalif</p>
+                  <p>coordonne les soins palliatifs en Île-de-France,</p>
+                  <p>participe à leur développement</p>
+                  <p>et contribue à la visibilité de leurs acteurs.</p>
+                  <br />
+                  <p>106 avenue EmileZola</p>
+                  <p>75015 Paris</p>
+                  <p>Tél. 00 00 00 00 00</p>
+                </div>
+                <div>
+                  <p>FAQ</p>
+                  <p>Newsletter</p>
+                  <p>Mentions légales</p>
+                  <p>Crédits</p>
+                </div>
+                <div>
+                  <p>Nos partenaires</p>
+                  <p>Logo01</p>
+                  <p>Logo02</p>
+                </div>
+              </div>
+              <div className="column">
+              <p>@ Corpalif - 2018</p>
+              </div>
+            </footer> */}
           </article>
 
         </div>

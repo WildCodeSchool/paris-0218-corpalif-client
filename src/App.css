@@ -13,6 +13,11 @@
   margin-top: 10px;
 }
 
+.App-Recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Header 001, partie supérieur du header, logo, recherche, login, etc*/
 /* ////////////////////////////////////////////////////////////////// */
@@ -56,7 +61,27 @@
 .ImageJustice {
   /*height: 250px;*/
   width: 100%;
-  background: url(./img/Justice_Fond_001.jpg) no-repeat center fixed;
+  background: url(./img/Justice_Fond_n&b_001.jpg) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover; 
+  /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%);*/
+}
+
+.ImageHopital {
+  /*height: 250px;*/
+  width: 100%;
+  background: url(./img/Hopital_Fond_n&b_001.jpg) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover; 
+  /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%);*/
+}
+
+.ImageAnciens {
+  /*height: 250px;*/
+  width: 100%;
+  background: url(./img/Anciens_Fond_n&b_001.jpg) no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover; 
   /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -131,8 +156,7 @@
 
   border: none;
 
-  background-image: url(img/Loupe.png);
-  /* background-color: rgb(204, 73, 73); Mettre un logo dessus */
+  background-color: rgb(204, 73, 73); /* Mettre un logo dessus */
   transition: background-color 0.3s;
 }
 
@@ -154,6 +178,11 @@
   color: white;
   background-color: rgb(16, 73, 73);
 }
+
+.FondGris {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 .CorpalifInformation h1 {
   display: flex;
@@ -194,7 +223,6 @@
 
 
 .carousel-item {
-  height: 300px;
   width: 100%;
   background: no-repeat center fixed;
   background-size: cover;
