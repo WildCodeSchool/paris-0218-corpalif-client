@@ -1,11 +1,26 @@
 import React from 'react';
 
-import './OngletDropDownSecondaire.css';
+import Styled from 'styled-components';
 
+
+// JSX
 const OngletDropDownSecondaire = ({ children }) =>
-  <a className="dropdown-item" href="#LaCorpalif">
+  <A className="dropdown-item" href="#LaCorpalif"> 
     <p>{children}</p>
-  </a>
+  </A>
+
+
+// Styled-components
+// eslint-disable 
+const A = Styled.a`
+  padding: 0 5px;
+  color: rgb(51, 116, 103);
+
+  ${A}:hover {
+    background-color: rgb(51, 116, 103);
+  }
+`;
+// eslint-enable
 
 
 export default OngletDropDownSecondaire
