@@ -7,7 +7,7 @@ import Logo_Corpalif from "../img/Corpalif_Logo.png";
 
 // JSX
 const Logo = () =>
-  <Img className="LogoCorpalif" src={Logo_Corpalif} alt="Corpalif" />
+  <Img src={Logo_Corpalif} alt="Corpalif" />
 
 
 // Styled-components
