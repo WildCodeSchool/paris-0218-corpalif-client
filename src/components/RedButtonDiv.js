@@ -1,14 +1,25 @@
 import React from 'react';
 import RedButton from './RedButton.js';
 
-import "./RedButtonDiv.css";
+import Styled from 'styled-components';
 
+
+// JSX
 const RedButtonDiv = ({ children }) => 
-  <div className="RedButtonDiv">
+  <Div>
     <RedButton> 
       {children} 
     </RedButton>
-  </div>
+  </Div>
+
+
+// Styled-components
+// eslint-disable 
+const Div = Styled.div`
+  display:flex;
+  justify-content: center;
+`;
+// eslint-enable
 
 
 export default RedButtonDiv
