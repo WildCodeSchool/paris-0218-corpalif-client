@@ -3,27 +3,22 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Logo from './components/Logo.js';
-import AccesRapide from './components/AccesRapide.js';
 import LittleLogo from './components/LittleLogo.js';
 import Recherche from './components/Recherche.js';
 import RedButton from './components/RedButton.js';
 import RedButtonDiv from './components/RedButtonDiv.js';
 import BigNavigation from './components/BigNavigation.js';
+import H1 from './components/H1.js';
+import Annuaire from './components/Annuaire.js';
 
 // import Logo_Corpalif from "./img/Corpalif_Logo.png";
 // import Loupe from "./img/Loupe.png";
-
-// import Boite from "./img/Boite.jpg";
-// import Etoile from "./img/Etoile.jpg";
-// import EtoileMer from "./img/EtoileMer.jpg"
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Logo />
-        <AccesRapide /> */}
         <div className="Container">
           <header>
           
@@ -35,9 +30,11 @@ class App extends Component {
               <div className="App-LittleNav col-5" >
                 {/* <AccesRapide /> */}
               </div>
-              <div className="App-LittleLogo col-1">
-                <LittleLogo />
-                <LittleLogo />
+              <div className="App-LittleLogo Flex col-1">
+                <div className="row DivLogo">
+                  <LittleLogo />
+                  <LittleLogo />
+                </div>
               </div>
               <div className="App-Recherche col-2">
                 <Recherche />
@@ -56,40 +53,19 @@ class App extends Component {
             </div>
           </header>
 
-          {/* Barre de recherche*/}
-          <article>
+          
+          {/* Annuaire Bloc */}
 
+          <article>         
             <section>
               <div className="column Flex">
                 <div className="App-RechercheCentrer ImageParis">
-                  <div className="row AnnuaireH1 col-12">
-                      <h1>Annuaire</h1>
+                  <div className="row Flex JustifyContent AlignItems col-12">
+                      <H1 children="Annuaire" />
                   </div>
 
                   <div className="row col-offset-1 col-10 col-offset-1">
-                    <form className="BlocGrisRecherche" role="search">
-                      <div className="BarreRecherche col-11">
-                        <button type="button" className="ButtonRecherche" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Action <span className="caret"></span>
-                        </button>
-                        {/*<ul className="DropDownMenu" aria-labelledby="dropdownMenu1">
-                          <li class=""><a href="Action_001">Action_001</a></li>
-                          <li class=""><a href="Action_002">Action_002</a></li>
-                          <li class=""><a href="Action_003">Action_003</a></li>
-                          <li role="separator" class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
-                        </ul>*/}
-
-                        <input type="text" className="InputRechercheNom" placeholder="Nom ou prestation" />
-                        <input type="text" className="InputRechercheVille" placeholder="Ville ou département" />
-                        
-                      </div>
-
-                      <div className="IconLoupe col-1">
-                        <button type="submit" className="ButtonRechercheSubmit"></button>
-                      </div>
-
-                    </form>
+                    <Annuaire />
                   </div>
                 </div>
               </div>

@@ -1,9 +1,24 @@
 .App * {
-/*  text-align: center; */
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
+}
+
+.DivLogo {
+  align-items: center;
+}
+
+.Flex {
+  display: flex;
+}
+
+.JustifyContent {
+  justify-content: center;
+}
+
+.AlignItems {
+  align-items: center;
 }
 
 .Container {
@@ -37,25 +52,18 @@
 /* Section avec l'image de fond + l'annuaire  */
 /* ////////////////////////////////////////// */
 
-.Flex {
-  display: flex;
-}
-
-.AnnuaireH1 {
+/* .AnnuaireH1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .ImageParis {
-  /*height: 250px;*/
   width: 100%;
   padding: 100px 0;
   background: url(./img/Paris_Fond_001.jpg) no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover; 
-  /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  /*filter: grayscale(100%);*/
 }
 
 .ImageJustice {
@@ -126,16 +134,24 @@
 
 .ButtonRecherche {
   flex: 3;
+  padding:0 5px;
   margin: 0 20px;
+
+  height: 45px;
+  border-radius: 0px;
 }
 
 .InputRechercheNom {
   flex: 6;
+  padding:0 5px;
   margin: 0 20px;
+
+  height: 45px;
 }
 
 .InputRechercheVille {
   flex: 3;
+  padding:0 5px;
   margin: 0 20px;
 
   height: 45px;
