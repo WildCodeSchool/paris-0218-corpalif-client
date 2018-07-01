@@ -1,12 +1,21 @@
 import React from 'react';
 
-import './Logo.css';
+import Styled from 'styled-components';
 
 import Logo_Corpalif from "../img/Corpalif_Logo.png";
 
 
+// JSX
 const Logo = () =>
-  <img className="LogoCorpalif" src={Logo_Corpalif} alt="Corpalif" />
+  <Img className="LogoCorpalif" src={Logo_Corpalif} alt="Corpalif" />
+
+
+// Styled-components
+// eslint-disable 
+const Img = Styled.img`
+  width: 200px; 
+`;
+// eslint-enable
 
 
 export default Logo
