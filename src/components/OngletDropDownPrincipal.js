@@ -1,11 +1,26 @@
 import React from 'react';
 
-import './OngletDropDownPrincipal.css';
+import Styled from 'styled-components';
 
+
+// JSX
 const OngletDropDownPrincipal = ({ children }) =>
-  <a className="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <A className="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     {children}
-  </a>
+  </A>
+
+
+// Styled-components
+// eslint-disable 
+const A = Styled.a`
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 1em;
+
+  content: none;
+`;
+// eslint-enable
 
 
 export default OngletDropDownPrincipal
