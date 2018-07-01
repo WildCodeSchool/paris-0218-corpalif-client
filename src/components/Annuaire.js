@@ -2,40 +2,54 @@ import React from 'react';
 
 import Styled from 'styled-components';
 
+import AnnuaireSelect from './AnnuaireSelect.js';
+import AnnuaireRecherche from './AnnuaireRecherche.js';
+import AnnuaireLoupe from './AnnuaireLoupe.js';
+
 
 // JSX 
 const Annuaire = () =>
-  <form className="BlocGrisRecherche" role="search">                 
-    <div className="BarreRecherche col-11">
-      <select className="custom-select ButtonRecherche" id="inlineFormCustomSelect">
-        <option selected>Type</option>
-        <option value="1">Unités de soins palliatifs</option>
-        <option value="2">Lits identifiés soins palliatifs</option>
-        <option value="3">Réseaux de soins palliatifs</option>
-        <option value="4">Équipes mobiles de soins palliatifs</option>
-        <option value="5">Hospitalisation à domicile</option>
-        <option value="6">Associations de bénévoles</option>
-        <option value="7">Autres structures</option>
-      </select>
+  <Form role="search">                 
+    <BigDiv className="col-11">
+      <Div className="col-3">
+        <AnnuaireSelect />
+      </Div>
+      <Div className="col-6">
+        <AnnuaireRecherche type="text" children="Nom ou prestation" />
+      </Div>
+      <Div className="col-3">
+        <AnnuaireRecherche type="text" children="Ville ou département" />
+      </Div>    
+    </BigDiv>
 
-      <input type="text" className="InputRechercheNom" placeholder="Nom ou prestation" />
-      <input type="text" className="InputRechercheVille" placeholder="Ville ou département" />
-      
+    <div className="col-1">
+      <AnnuaireLoupe />
     </div>
-
-    <div className="IconLoupe col-1">
-      <button type="submit" className="ButtonRechercheSubmit"></button>
-    </div>
-  </form>
+  </Form>
 
 
 // Styled-components
 // eslint-disable 
+const Form = Styled.form`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+  width: 100%;
+  margin: auto;
+
+  background-color: rgba(95, 95, 95, 0.5);
+`
+
+const BigDiv = Styled.div`
+  display: flex;
+  padding:0 10px;
+`;
+
 const Div = Styled.div`
-
-  ${Div}:hover {
-
-  }
+  padding:0 10px;
 `;
 // eslint-enable
 
