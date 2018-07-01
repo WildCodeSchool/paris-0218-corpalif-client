@@ -1,11 +1,27 @@
 import React from 'react';
 
-import './BreadCrumb.css';
+import Styled from 'styled-components';
 
+
+// JSX
 const BreadCrumb01 = ({ children }) =>
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">{children}</li>
-  </ol>
+  <Ol class="breadcrumb">
+    <Li className="breadcrumb-item"><a href="#Home">{children}</a></Li>
+  </Ol>
+
+
+// Styled-components
+// eslint-disable 
+const Ol = Styled.ol`
+  display: flex; 
+  margin-left: 20px;
+  background-color: transparent;
+`;
+
+const Li = Styled.li`
+  padding-left: 0;
+`;
+// eslint-enable
 
 
 export default BreadCrumb01
