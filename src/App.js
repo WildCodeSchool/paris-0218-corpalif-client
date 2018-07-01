@@ -8,11 +8,7 @@ import Recherche from './components/Recherche.js';
 import RedButton from './components/RedButton.js';
 import RedButtonDiv from './components/RedButtonDiv.js';
 import BigNavigation from './components/BigNavigation.js';
-import H1 from './components/H1.js';
-import Annuaire from './components/Annuaire.js';
-
-// import Logo_Corpalif from "./img/Corpalif_Logo.png";
-// import Loupe from "./img/Loupe.png";
+import AnnuaireAvecBlocGris from './components/AnnuaireAvecBlocGris';
 
 
 class App extends Component {
@@ -59,15 +55,7 @@ class App extends Component {
           <article>         
             <section>
               <div className="column Flex">
-                <div className="App-RechercheCentrer ImageParis">
-                  <div className="row Flex JustifyContent AlignItems col-12">
-                      <H1 children="Annuaire" />
-                  </div>
-
-                  <div className="row col-offset-1 col-10 col-offset-1">
-                    <Annuaire />
-                  </div>
-                </div>
+                <AnnuaireAvecBlocGris children="ImageParis" />
               </div>
             </section>
 
@@ -85,10 +73,9 @@ class App extends Component {
                         <br />
                         <p>4 missions au service des Franciliens</p>
                         <ul>
-                          <li>● Assurer le lien entre les structures de prise en charge</li>
+                        <li>● Assurer le lien entre les structures de prise en charge</li>
                           <li>● Coordonner et participer au développement des soins palliatifs en Île-de-France</li>
                           <li>● Susciter des échanges et des rencontres avec et entre ces professionnels</li>
-                          <li>● Promouvoir des actions d'information en soins palliatifs</li>
                         </ul>
 
                       </div>

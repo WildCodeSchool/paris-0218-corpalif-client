@@ -34,6 +34,7 @@
   align-items: center;
 }
 
+
 /* Header 001, partie supérieur du header, logo, recherche, login, etc*/
 /* ////////////////////////////////////////////////////////////////// */
 
@@ -48,19 +49,10 @@
 }
 
 
-
 /* Section avec l'image de fond + l'annuaire  */
 /* ////////////////////////////////////////// */
 
-/* .AnnuaireH1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .ImageParis {
-  width: 100%;
-  padding: 100px 0;
   background: url(./img/Paris_Fond_001.jpg) no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover; 
@@ -96,93 +88,17 @@
   /*filter: grayscale(100%);*/
 }
 
-.App-RechercheCentrer {
+
+
+/* Section avec La Corpalif 4 missions + dons  */
+/* /////////////////////////////////////////// */
+
+/* .App-RechercheCentrer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-
-.AnnuaireH1 h1{
-  display: flex;
-  font-size: 56px;
-  font-weight: bold;
-  color: white;
-}
-
-.RedButtonDiv {
-  display:flex;
-  justify-content: center;
-}
-
-.BlocGrisRecherche {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  height: 90px;
-  width: 100%;
-  margin: auto;
-
-  background-color: rgba(95, 95, 95, 0.5);
-}
-
-.BarreRecherche {
-  display:flex;
-}
-
-.ButtonRecherche {
-  flex: 3;
-  padding:0 5px;
-  margin: 0 20px;
-
-  height: 45px;
-  border-radius: 0px;
-}
-
-.InputRechercheNom {
-  flex: 6;
-  padding:0 5px;
-  margin: 0 20px;
-
-  height: 45px;
-}
-
-.InputRechercheVille {
-  flex: 3;
-  padding:0 5px;
-  margin: 0 20px;
-
-  height: 45px;
-}
-
-.IconLoupe {
-  display: flex;
-  justify-content: flex-end;
-
-  height: 90px;
-  width: 90px;
-}
-
-.ButtonRechercheSubmit {
-  flex: 1;
-  height: 90px;
-  width: 90px;
-
-  border: none;
-
-  background-color: rgb(204, 73, 73); /* Mettre un logo dessus */
-  transition: background-color 0.3s;
-}
-
-.ButtonRechercheSubmit:hover {
-  background-color: rgb(142, 32, 33);
-  transition: background-color 0.4s;
-}
-
-/* Section avec La Corpalif 4 missions + dons  */
-/* /////////////////////////////////////////// */
+} */
 
 .App-CorpalifInformation {
   display: flex;
