@@ -2,7 +2,7 @@ import React from 'react';
 
 import Styled from 'styled-components';
 
-import H1 from './H1.js';
+import BaliseH1 from './BaliseH1';
 import Annuaire from './Annuaire.js';
 
 
@@ -10,7 +10,7 @@ import Annuaire from './Annuaire.js';
 const AnnuaireAvecBlocGris = ({ children }) =>
 <DivGris className={children}>
   <div className="row Flex JustifyContent AlignItems col-12">
-      <H1 children="Annuaire" />
+      <BaliseH1 children="Annuaire" />
   </div>
 
   <div className="row col-offset-1 col-10 col-offset-1">
