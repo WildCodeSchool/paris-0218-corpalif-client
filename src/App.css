@@ -5,10 +5,6 @@
   text-decoration: none;
 }
 
-.DivLogo {
-  align-items: center;
-}
-
 .Flex {
   display: flex;
 }
@@ -27,13 +23,6 @@
 
   margin-top: 10px;
 }
-
-.App-Recherche {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 /* Header 001, partie supérieur du header, logo, recherche, login, etc*/
 /* ////////////////////////////////////////////////////////////////// */

@@ -6,12 +6,10 @@ import BaliseH1 from './components/BaliseH1';
 import BaliseH2 from './components/BaliseH2';
 import BaliseP from './components/BaliseP';
 import BalisePBold from './components/BalisePBold';
-import Logo from './components/Logo.js';
-import LittleLogo from './components/LittleLogo.js';
-import Recherche from './components/Recherche.js';
-import RedButton from './components/RedButton.js';
+import Header from './components/Header'; 
+import AnnuaireEnEntier from './components/AnnuaireEnEntier';
+// import RedButton from './components/RedButton.js';
 import RedButtonDiv from './components/RedButtonDiv.js';
-import BigNavigation from './components/BigNavigation.js';
 import AnnuaireAvecBlocGris from './components/AnnuaireAvecBlocGris';
 
 
@@ -21,48 +19,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Container">
-          <header>
-          
-            {/* Header 1ère ligne. Zone pour le logo, le petit nav, les petits logo, la recherche et le login */}
-            <div className="row RowMargin">
-              <div className="App-LogoCorpalif col-2" >
-                <Logo />
-              </div>
-              <div className="App-LittleNav col-5" >
-                {/* <AccesRapide /> */}
-              </div>
-              <div className="App-LittleLogo Flex col-1">
-                <div className="row DivLogo">
-                  <LittleLogo />
-                  <LittleLogo />
-                </div>
-              </div>
-              <div className="App-Recherche col-2">
-                <Recherche />
-              </div>
-              <div className="App-Login col-2">
-                <RedButton children="Espace adhérent" />
-              </div>
+          <Header />   
 
-            </div>
-
-            {/* Header 2ère ligne. Zone pour la navigation principale*/}
-            <div className="row">
-              <div className="App-BigNavigation col-12">
-                <BigNavigation />
-              </div>
-            </div>
-          </header>
-
-          
-          {/* Annuaire Bloc */}
-
+          {/* Corps de page */}
           <article>         
-            <section>
-              <div className="column Flex">
-                <AnnuaireAvecBlocGris children="ImageParis" />
-              </div>
-            </section>
+            <AnnuaireEnEntier />
 
             <section>
               <div className="row">
