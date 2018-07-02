@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 // import { Media } from 'reactstrap';
 import './App.css';
 
+import BaliseH1 from './components/BaliseH1';
+import BaliseH2 from './components/BaliseH2';
+import BaliseP from './components/BaliseP';
+import BalisePBold from './components/BalisePBold';
 import Logo from './components/Logo.js';
 import LittleLogo from './components/LittleLogo.js';
 import Recherche from './components/Recherche.js';
@@ -9,6 +13,7 @@ import RedButton from './components/RedButton.js';
 import RedButtonDiv from './components/RedButtonDiv.js';
 import BigNavigation from './components/BigNavigation.js';
 import AnnuaireAvecBlocGris from './components/AnnuaireAvecBlocGris';
+
 
 
 class App extends Component {
@@ -63,19 +68,22 @@ class App extends Component {
               <div className="row">
                 <div className="App-CorpalifInformation">
                   <div className="CorpalifInformation">
-                    <h1 >La Corpalif</h1>
+                    <BaliseH1 children="La Corpalif" />
                     <div className="CorpalifInformationCentrer">
                       <div className="DivFlollante">
 
                         {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
                         besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
-                        <h2>Coordination régionale des soins palliatifs en Île-de-France</h2>
+                        <BaliseH2 children="Coordination régionale des soins palliatifs en Île-de-France"></BaliseH2>
                         <br />
-                        <p>4 missions au service des Franciliens</p>
+                        <BalisePBold children="4 missions au service des Franciliens"></BalisePBold>
                         <ul>
-                        <li>● Assurer le lien entre les structures de prise en charge</li>
-                          <li>● Coordonner et participer au développement des soins palliatifs en Île-de-France</li>
-                          <li>● Susciter des échanges et des rencontres avec et entre ces professionnels</li>
+                          <li><BaliseP children="● Assurer le lien entre les structures de prise en charge"></BaliseP></li>
+                          <li><BaliseP children="● Coordonner et participer au développement des soins palliatifs en Île-de-France"></BaliseP></li>
+                          <li><BaliseP children="● Susciter des échanges et des rencontres avec et entre ces professionnels"></BaliseP></li>
+                          <li><BaliseP children="● Promouvoir des actions d'information en soins palliatifs"></BaliseP></li>
+                          <li><BaliseP children="● Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs"></BaliseP></li>
+
                         </ul>
 
                       </div>
@@ -85,6 +93,8 @@ class App extends Component {
                 </div>
               </div>
             </section>
+
+
 
             {/* Slider, à modifier avec sagesse !!! */}
             <section>
@@ -101,7 +111,7 @@ class App extends Component {
                       <div className="row">
                         <div className="App-CorpalifInformation FondGris">
                           <div className="CorpalifInformation">
-                            <h1>Manifeste de la SFAP</h1>
+                            <BaliseH1 children="Manifeste de la SFAP" />
                             <div className="CorpalifInformationCentrer">
                               <div className="DivFlollante">
                                 {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 

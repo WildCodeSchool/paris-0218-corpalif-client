@@ -105,7 +105,7 @@
   flex-direction: column;
 
   width: 100%;
-  padding: 20px;
+  padding: 50px;
 
   color: white;
   background-color: rgb(16, 73, 73);
@@ -134,6 +134,8 @@
 .DivFlollante {
   display: flex;
   flex-direction: column;
+
+  max-width: 1000px;
 }
 
 .CorpalifInformation h2 {
@@ -143,10 +145,6 @@
 
 .CorpalifInformation p, .CorpalifInformation li {
   display: flex;
-}
-
-.CorpalifInformation p{
-  font-weight: bold;
 }
 
 
