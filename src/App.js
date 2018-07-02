@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 // import { Media } from 'reactstrap';
 import './App.css';
 
-import BaliseH1 from './components/BaliseH1';
-import BaliseH2 from './components/BaliseH2';
-import BaliseP from './components/BaliseP';
-import BalisePBold from './components/BalisePBold';
-import Header from './components/Header'; 
-import AnnuaireEnEntier from './components/AnnuaireEnEntier';
+import BaliseH1 from './components/BaliseH1.js';
+import Header from './components/Header.js'; 
+import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
+import Article from './components/Article.js';
+// import Carrousel from './components/Carrousel.js';
 // import RedButton from './components/RedButton.js';
 import RedButtonDiv from './components/RedButtonDiv.js';
-import AnnuaireAvecBlocGris from './components/AnnuaireAvecBlocGris';
 
 
 
@@ -22,43 +20,12 @@ class App extends Component {
           <Header />   
 
           {/* Corps de page */}
-          <article>         
+          <section>         
             <AnnuaireEnEntier />
-
-            <section>
-              <div className="row">
-                <div className="App-CorpalifInformation">
-                  <div className="CorpalifInformation">
-                    <BaliseH1 children="La Corpalif" />
-                    <div className="CorpalifInformationCentrer">
-                      <div className="DivFlollante">
-
-                        {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
-                        besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
-                        <BaliseH2 children="Coordination régionale des soins palliatifs en Île-de-France"></BaliseH2>
-                        <br />
-                        <BalisePBold children="4 missions au service des Franciliens"></BalisePBold>
-                        <ul>
-                          <li><BaliseP children="● Assurer le lien entre les structures de prise en charge"></BaliseP></li>
-                          <li><BaliseP children="● Coordonner et participer au développement des soins palliatifs en Île-de-France"></BaliseP></li>
-                          <li><BaliseP children="● Susciter des échanges et des rencontres avec et entre ces professionnels"></BaliseP></li>
-                          <li><BaliseP children="● Promouvoir des actions d'information en soins palliatifs"></BaliseP></li>
-                          <li><BaliseP children="● Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs Promouvoir des actions d'information en soins palliatifs"></BaliseP></li>
-
-                        </ul>
-
-                      </div>
-                    </div>
-                    <RedButtonDiv children="En savoir plus"/>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-
+            <Article />
 
             {/* Slider, à modifier avec sagesse !!! */}
-            <section>
+            <article>
               <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -75,8 +42,7 @@ class App extends Component {
                             <BaliseH1 children="Manifeste de la SFAP" />
                             <div className="CorpalifInformationCentrer">
                               <div className="DivFlollante">
-                                {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
-                                besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
+
                                 <br />
                                 <p>
                                   Lire le communiqué de presse de la SFAP <br />
@@ -104,8 +70,7 @@ class App extends Component {
                             <h1>L'hôpital public dans les déficits ?</h1>
                             <div className="CorpalifInformationCentrer">
                               <div className="DivFlollante">
-                                {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
-                                besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
+
                                 <br />
                                 <p>
                                 Lire le communiqué de presse de la SFAP <br />
@@ -133,8 +98,7 @@ class App extends Component {
                             <h1>L'information du patient</h1>
                             <div className="CorpalifInformationCentrer">
                               <div className="DivFlollante">
-                                {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
-                                besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
+
                                 <br />
                                 <p>
                                   La question de l'information est souvent récurrente dans le cursus du cancéreux :<br />
@@ -164,35 +128,9 @@ class App extends Component {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-            </section>      
-
-            <section>
-              <div className="row">
-                <div className="App-CorpalifInformation">
-                  <div className="CorpalifInformation">
-                    <h1 >La Corpalif</h1>
-                    <div className="CorpalifInformationCentrer">
-                      <div className="DivFlollante">
-
-                        {/* La DivFlottante sert à forcer les éléments à l'intérieur à être férré à gauche sans 
-                        besoin particulier de float, c'est la double div qui permet ce petit tour de magie !*/}
-                        <h2>Coordination régionale des soins palliatifs en Île-de-France</h2>
-                        <br />
-                        <p>4 missions au service des Franciliens</p>
-                        <ul>
-                          <li>● Assurer le lien entre les structures de prise en charge</li>
-                          <li>● Coordonner et participer au développement des soins palliatifs en Île-de-France</li>
-                          <li>● Susciter des échanges et des rencontres avec et entre ces professionnels</li>
-                          <li>● Promouvoir des actions d'information en soins palliatifs</li>
-                        </ul>
-
-                      </div>
-                    </div>
-                    <RedButtonDiv children="En savoir plus"/>
-                  </div>
-                </div>
-              </div>
-            </section>      
+            </article>      
+            {/* <Carrousel /> */}
+            <Article />  
 
             {/* <footer>
               <div className="row">
@@ -222,7 +160,7 @@ class App extends Component {
               <p>@ Corpalif - 2018</p>
               </div>
             </footer> */}
-          </article>
+          </section>
 
         </div>
       </div>

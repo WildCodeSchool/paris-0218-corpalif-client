@@ -104,14 +104,6 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-.CorpalifInformation h1 {
-  display: flex;
-  justify-content: center;
-
-  font-size: 56px;
-  font-weight: bold;
-}
 .CorpalifInformationCentrer {
   display: flex;
   flex-direction: row;
@@ -127,12 +119,7 @@
   max-width: 1000px;
 }
 
-.CorpalifInformation h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.CorpalifInformation p, .CorpalifInformation li {
+.CorpalifInformation li {
   display: flex;
 }
 
