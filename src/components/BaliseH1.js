@@ -13,6 +13,9 @@ const BaliseH1 = ({ children }) =>
 // Styled-components
 // eslint-disable 
 const Title01 = Styled.h1`
+  display: flex;
+  justify-content: center;
+
   color: white;
   font-size: 56px;
   font-weight: bold;
