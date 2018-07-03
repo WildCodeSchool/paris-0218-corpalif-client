@@ -1,18 +1,18 @@
 import React from 'react';
 
-import './../App.css';
 import Styled from 'styled-components';
 
 import BaliseH1 from './BaliseH1.js';
-import BaliseH2 from './BaliseH2.js';
-import BalisePBold from './BalisePBold.js';
-import BaliseP from './BaliseP.js';
+// import BaliseH2 from './BaliseH2.js';
+// import BalisePBold from './BalisePBold.js';
+// import BaliseP from './BaliseP.js';
 import RedButtonDiv from './RedButtonDiv.js';
+
+import Justice from './../img/Justice_Fond_001.jpg';
 
 
 // JSX
 const Carrousel = () => 
-
   <article>
     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
@@ -23,7 +23,7 @@ const Carrousel = () =>
 
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <div className="d-block w-100 ImageJustice" alt="First slide">
+            <DivJustice src={Justice} className="d-block w-100" alt="First slide"> {/* ici */}
             <div className="row">
               <DivInformation className="FondGris">
                 <div className="CorpalifInformation">
@@ -47,7 +47,7 @@ const Carrousel = () =>
                 </div>
               </DivInformation>
             </div>
-          </div>
+          </DivJustice>
         </div>
 
         <div className="carousel-item">
@@ -116,17 +116,18 @@ const Carrousel = () =>
         <span className="sr-only">Next</span>
       </a>
     </div>
-  </article>   
-
+  </article>
 
 
 // Styled-components
 // eslint-disable 
-// const DivJustice = Styled.div` 
-//   // width: 100%;
-//   // background-size: cover;
-//   // -webkit-background-size: cover; 
-// `;
+const DivJustice = Styled.div` 
+  height: 250px;
+  width: 100%;
+  background: no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover; 
+`;
 
 const DivInformation = Styled.div`
   display: flex;
