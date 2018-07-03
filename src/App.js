@@ -4,9 +4,10 @@ import './App.css';
 
 // import BaliseH1 from './components/BaliseH1.js';
 import Header from './components/Header.js'; 
-import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
-import Article from './components/Article.js';
-import Carrousel from './components/Carrousel.js';
+// import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
+import Formulaire from './components/Formulaire.js';
+// import Article from './components/Article.js';
+// import Carrousel from './components/Carrousel.js';
 // import RedButton from './components/RedButton.js';
 // import RedButtonDiv from './components/RedButtonDiv.js';
 
@@ -21,8 +22,9 @@ class App extends Component {
 
           {/* Corps de page */}
           <section>         
-            <AnnuaireEnEntier />
-            <Article />
+            {/* <AnnuaireEnEntier /> */}
+            <Formulaire />
+            {/* <Article /> */}
 
             {/* Slider, à modifier avec sagesse !!! */}
             {/* <article>
@@ -129,8 +131,8 @@ class App extends Component {
                 </a>
               </div>
             </article>       */}
-            <Carrousel />
-            <Article />  
+            {/* <Carrousel /> */}
+            {/* <Article />   */}
 
             {/* <footer>
               <div className="row">
