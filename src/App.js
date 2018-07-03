@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 // import { Media } from 'reactstrap';
 import './App.css';
 
-import BaliseH1 from './components/BaliseH1.js';
+// import BaliseH1 from './components/BaliseH1.js';
 import Header from './components/Header.js'; 
 import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
 import Article from './components/Article.js';
-// import Carrousel from './components/Carrousel.js';
+import Carrousel from './components/Carrousel.js';
 // import RedButton from './components/RedButton.js';
-import RedButtonDiv from './components/RedButtonDiv.js';
+// import RedButtonDiv from './components/RedButtonDiv.js';
 
 
 
@@ -25,7 +25,7 @@ class App extends Component {
             <Article />
 
             {/* Slider, à modifier avec sagesse !!! */}
-            <article>
+            {/* <article>
               <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -128,8 +128,8 @@ class App extends Component {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-            </article>      
-            {/* <Carrousel /> */}
+            </article>       */}
+            <Carrousel />
             <Article />  
 
             {/* <footer>
