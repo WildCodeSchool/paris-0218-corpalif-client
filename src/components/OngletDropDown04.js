@@ -10,12 +10,10 @@ const OngletDropDown04 = () =>
   <ul>
     <div href="#CoordinationRegionale">
       <Div className="dropdown">
-        <OngletDropDownPrincipal children="VEILLE MÉDICALE"/>
+        <OngletDropDownPrincipal children="EMPLOI / FORMATION"/>
         <DivMenu className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <OngletDropDownSecondaire children="Recommandations et outils"/>
-        <OngletDropDownSecondaire children="Actualités nationales et régionales"/>
-        <OngletDropDownSecondaire children="Evènements"/>
-        <OngletDropDownSecondaire children="Nos rencontres"/>
+        <OngletDropDownSecondaire children="Offres d'emploi"/>
+        <OngletDropDownSecondaire children="Formations"/>
         </DivMenu>
       </Div>
     </div>
