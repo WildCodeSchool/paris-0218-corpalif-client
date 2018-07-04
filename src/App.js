@@ -8,9 +8,9 @@ import Header from './components/Header.js';
 import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
 // import Formulaire from './components/Formulaire.js';
 import Article01 from './components/Article01.js';
-import Article02 from './components/Article02.js';
 // import Carrousel from './components/Carrousel.js';
-// import RedButton from './components/RedButton.js';
+import Article02 from './components/Article02.js';
+import Footer from './components/Footer.js'
 import RedButtonDiv from './components/RedButtonDiv.js';
 
 
@@ -138,35 +138,7 @@ class App extends Component {
             </article>      
             {/* <Carrousel /> */}
             <Article02 />  
-
-            <footer>
-              <div className="row">
-                <div className="App-Footer">
-                  <p>La Corpalif</p>
-                  <p>coordonne les soins palliatifs en Île-de-France,</p>
-                  <p>participe à leur développement</p>
-                  <p>et contribue à la visibilité de leurs acteurs.</p>
-                  <br />
-                  <p>106 avenue EmileZola</p>
-                  <p>75015 Paris</p>
-                  <p>Tél. 00 00 00 00 00</p>
-                </div>
-                <div>
-                  <p>FAQ</p>
-                  <p>Newsletter</p>
-                  <p>Mentions légales</p>
-                  <p>Crédits</p>
-                </div>
-                <div>
-                  <p>Nos partenaires</p>
-                  <p>Logo01</p>
-                  <p>Logo02</p>
-                </div>
-              </div>
-              <div className="column">
-              <p>@ Corpalif - 2018</p>
-              </div>
-            </footer>
+            <Footer />
           </section>
 
         </div>
