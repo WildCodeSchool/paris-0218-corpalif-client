@@ -25,6 +25,9 @@ const Img = Styled.img`
   justify-content: center;
   align-items: center;
 
+  filter: invert(0%);
+  transition: filter 0.3s;
+
   ${Img}:hover {
     height: 40px;
     width: 40px;
@@ -32,6 +35,9 @@ const Img = Styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    filter: invert(100%);
+    transition: filter 0.4s;
   }
 `;
 

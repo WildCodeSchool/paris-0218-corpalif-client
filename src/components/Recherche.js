@@ -18,7 +18,8 @@ const Recherche = () =>
 // Styled-components
 // eslint-disable 
 const Button = Styled.button`
-  height: 30px;
+  height: 38px;
+  width: 38px;
   font-size: 1.2em;
   color: white;
   background-color: rgb(204, 73, 73);
@@ -40,8 +41,10 @@ const Button = Styled.button`
 `;
 
 const Input = Styled.input`
-  height: 30px;
+  height: 38px;
+  padding: 0 5px;
   font-size: 0.8em;
+  font-weight: bold;
   border-radius: 0;
 `;
 // eslint-enable

@@ -13,7 +13,7 @@ const RedButton = ({ children, ...rest }) =>
 // Styled-components
 // eslint-disable 
 const Button = Styled.button`
-  height: 30px;
+  height: 38px;
   padding: 0 15px;
   color: white;
   font-weight: bold;

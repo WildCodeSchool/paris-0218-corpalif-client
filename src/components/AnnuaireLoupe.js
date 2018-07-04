@@ -5,7 +5,7 @@ import Styled from 'styled-components';
 
 // JSX 
 const AnnuaireLoupe = () =>
-  <Button type="submit"></Button>
+  <Button type="submit"><span role="img" aria-label="Loupe">🔍</span></Button>
 
 
 // Styled-components
@@ -15,7 +15,10 @@ const Button = Styled.button`
   width: 100%;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  color: white;
+  font-size: 60px;
+  transition: color 0.3s;
 
   border: none;
   // background-image: url("../img/Loupe.png");
@@ -24,6 +27,9 @@ const Button = Styled.button`
   transition: background-color 0.3s;
 
 ${Button}:hover {
+  color: rgb(201, 201, 201);
+  transition: color 0.4s;
+
   background-color: rgb(142, 32, 33);
   transition: background-color 0.4s;
 }
