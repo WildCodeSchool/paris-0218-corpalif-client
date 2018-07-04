@@ -14,7 +14,7 @@ const OngletDropDown02 = () =>
         <DivMenu className="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <OngletDropDownSecondaire children="La démarche palliative"/>
         <OngletDropDownSecondaire children="Qu'est-ce que les sonis palliatifs"/>
-        <OngletDropDownSecondaire children="Vrai/Faux"/>
+        <OngletDropDownSecondaire children="Vrai / Faux"/>
         <OngletDropDownSecondaire children="Les structures de prise en charge"/>
         <OngletDropDownSecondaire children="Législation"/>
         <OngletDropDownSecondaire children="Accompagner son proche"/>

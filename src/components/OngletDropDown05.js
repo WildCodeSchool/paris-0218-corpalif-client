@@ -14,7 +14,7 @@ const OngletDropDown05 = () =>
         <DivMenu className="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <OngletDropDownSecondaire children="Recommandations et outils"/>
         <OngletDropDownSecondaire children="Actualités nationales et régionales"/>
-        <OngletDropDownSecondaire children="Evènements"/>
+        <OngletDropDownSecondaire children="Évènements"/>
         <OngletDropDownSecondaire children="Nos rencontres"/>
         </DivMenu>
       </Div>

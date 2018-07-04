@@ -41,7 +41,7 @@ const RedButton = () =>
         </div>
 
         <DivCorpaCenter className="row">
-          <div className="col-2">
+          <div className="col-4">
             <BalisePBold24>© Corpalif - 2018</BalisePBold24>
           </div>
         </DivCorpaCenter>
@@ -52,10 +52,6 @@ const RedButton = () =>
 
 // Styled-components
 // eslint-disable 
-const DivText = Styled.div`
-  padding: 20px;
-`;
-
 const DivInformation = Styled.div`
   display: flex;
   flex-direction: column;
@@ -67,11 +63,15 @@ const DivInformation = Styled.div`
   background-color: rgb(16, 73, 73);
 `;
 
+const DivText = Styled.div`
+  padding: 20px;
+`;
+
 /* my-component.css */
 const DivCorpaCenter = Styled.div`
   justify-content: center;
   text-align: center;
-`
+`;
 
 const Li = Styled.li`   
   ${Li}:hover {
