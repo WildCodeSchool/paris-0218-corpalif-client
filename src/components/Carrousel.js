@@ -4,7 +4,7 @@ import Styled from 'styled-components';
 
 import BaliseH1 from './BaliseH1.js';
 // import BaliseH2 from './BaliseH2.js';
-// import BalisePBold from './BalisePBold.js';
+// import BalisePBold24 from './BalisePBold24.js';
 // import BaliseP from './BaliseP.js';
 import RedButtonDiv from './RedButtonDiv.js';
 
