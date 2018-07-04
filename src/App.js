@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 // import { Media } from 'reactstrap';
 import './App.css';
 
-// import BaliseH1 from './components/BaliseH1.js';
+import BaliseH1 from './components/BaliseH1.js';
+import BalisePBold24 from './components/BalisePBold24.js';
 import Header from './components/Header.js'; 
-// import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
-import Formulaire from './components/Formulaire.js';
-// import Article from './components/Article.js';
+import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
+// import Formulaire from './components/Formulaire.js';
+import Article01 from './components/Article01.js';
+import Article02 from './components/Article02.js';
 // import Carrousel from './components/Carrousel.js';
 // import RedButton from './components/RedButton.js';
-// import RedButtonDiv from './components/RedButtonDiv.js';
+import RedButtonDiv from './components/RedButtonDiv.js';
 
 
 
@@ -22,12 +24,12 @@ class App extends Component {
 
           {/* Corps de page */}
           <section>         
-            {/* <AnnuaireEnEntier /> */}
-            <Formulaire />
-            {/* <Article /> */}
+            <AnnuaireEnEntier />
+            {/* <Formulaire /> */}
+            <Article01 />
 
             {/* Slider, à modifier avec sagesse !!! */}
-            {/* <article>
+            <article>
               <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -41,23 +43,31 @@ class App extends Component {
                       <div className="row">
                         <div className="App-CorpalifInformation FondGris">
                           <div className="CorpalifInformation">
-                            <BaliseH1 children="Manifeste de la SFAP" />
+
+                            <div>
+                              <BaliseH1 children="Les soins palliatifs" />
+                            </div>
+                            
                             <div className="CorpalifInformationCentrer">
                               <div className="DivFlollante">
 
+                                <BalisePBold24>
+                                  Les soins palliatifs sont des soins actifs délivrés dans une approche globale de la personne 
+                                atteinte d'une maladie grave, évolutive ou terminale.
+                                </BalisePBold24>
                                 <br />
-                                <p>
-                                  Lire le communiqué de presse de la SFAP <br />
-                                  « Comment mettre en œuvre une sédation profonde et continue maintenue jusqu'au décès ? ».<br />
-                                  Le guide de la Haute Autorité de Santé: disponible !<br /><br />
-                                </p>
-                                <p>
-                                  http://ow.ly/ogzc30iXy6e #SoinsPalliatifs
-                                </p>
+                                <BalisePBold24>
+                                  Ces soins, délivrés par une équipe pluridisciplinaire, ont pour objectif la qualité de vie du patient et l'accompagnement de ses 
+                                proches, qu'il soit à domicile ou en institution.
+                                </BalisePBold24>
 
                               </div>
                             </div>
-                            <RedButtonDiv> Voir l'actualité </RedButtonDiv>
+
+                            <div>
+                              <RedButtonDiv alt="Onglet: Les soins palliatifs => La démarche palliative" children="La démarche palliative"></RedButtonDiv>
+                            </div>
+
                           </div>
                         </div>
                       </div>
@@ -69,23 +79,19 @@ class App extends Component {
                       <div className="row">
                         <div className="App-CorpalifInformation FondGris">
                           <div className="CorpalifInformation">
-                            <h1>L'hôpital public dans les déficits ?</h1>
+                            <BaliseH1 children="Actualités" />
                             <div className="CorpalifInformationCentrer">
                               <div className="DivFlollante">
 
                                 <br />
-                                <p>
-                                Lire le communiqué de presse de la SFAP <br />
-                                  « Comment mettre en œuvre une sédation profonde et continue maintenue jusqu'au décès ? ».<br />
-                                  Le guide de la Haute Autorité de Santé: disponible !<br /><br />
-                                </p>
-                                <p>
-                                  http://ow.ly/ogzc30iXy6e #SoinsPalliatifs
-                                </p>
+                                <BalisePBold24>
+                                  Retrouvez les actualités nationales et régionales<br />
+                                </BalisePBold24>
+                                <br />
 
                               </div>
                             </div>
-                            <RedButtonDiv> Voir l'actualité </RedButtonDiv>
+                            <RedButtonDiv alt="Onglet: Veille médicale => Actualités nationales et régionales" children="Actualités"></RedButtonDiv>
                           </div>
                         </div>
                       </div>
@@ -97,23 +103,22 @@ class App extends Component {
                       <div className="row">
                         <div className="App-CorpalifInformation FondGris">
                           <div className="CorpalifInformation">
-                            <h1>L'information du patient</h1>
+                            <BaliseH1 children="Nos rencontres" />
                             <div className="CorpalifInformationCentrer">
                               <div className="DivFlollante">
 
                                 <br />
-                                <p>
-                                  La question de l'information est souvent récurrente dans le cursus du cancéreux :<br />
-                                  lors du diagnostic, lors de l'échec thérapeutique, lors de la phase terminale.<br />
-                                  Le guide de la Haute Autorité de Santé: disponible !<br /><br />
-                                </p>
-                                <p>
-                                  http://ow.ly/ogzc30iXy6e #SoinsPalliatifs
-                                </p>
+                                <BalisePBold24>
+                                  Les rencontres de la CORPALIF : échanges, partage, diffusion.
+                                </BalisePBold24> 
+                                <br />
+                                <BalisePBold24>
+                                  Retrouvez les dates des après-midi thématiques et de la journée régionale des acteurs de soins palliatifs<br />
+                                </BalisePBold24>
 
                               </div>
                             </div>
-                            <RedButtonDiv> Voir l'actualité </RedButtonDiv>
+                            <RedButtonDiv alt="Onglet: Veille médicale => Nos rencontres" children="Nos rencontres"></RedButtonDiv>
                           </div>
                         </div>
                       </div>
@@ -130,9 +135,9 @@ class App extends Component {
                   <span className="sr-only">Next</span>
                 </a>
               </div>
-            </article>       */}
+            </article>      
             {/* <Carrousel /> */}
-            {/* <Article />   */}
+            <Article02 />  
 
             {/* <footer>
               <div className="row">
