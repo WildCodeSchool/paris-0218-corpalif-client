@@ -22,9 +22,15 @@ const Img = Styled.img`
   justify-content: center;
   align-items: center;
 
+  filter: brightness(100%);
+  transition: filter 0.3s;
+
   ${Img}:hover {
     height: 40px;
     width: 40px;
+
+    filter: brightness(120%);
+    transition: filter 0.4s;
   }
 `;
 // eslint-enable
