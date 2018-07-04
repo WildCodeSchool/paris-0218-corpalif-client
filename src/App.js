@@ -10,6 +10,7 @@ import AnnuaireEnEntier from './components/AnnuaireEnEntier.js';
 import Article01 from './components/Article01.js';
 // import Carrousel from './components/Carrousel.js';
 import Article02 from './components/Article02.js';
+import RendezVous from './components/RendezVous.js';
 import Footer from './components/Footer.js'
 import RedButtonDiv from './components/RedButtonDiv.js';
 
@@ -137,7 +138,8 @@ class App extends Component {
               </div>
             </article>      
             {/* <Carrousel /> */}
-            <Article02 />  
+            <Article02 /> 
+            <RendezVous /> 
             <Footer />
           </section>
 
