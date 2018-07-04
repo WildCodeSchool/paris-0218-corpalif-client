@@ -139,7 +139,7 @@ class App extends Component {
             {/* <Carrousel /> */}
             <Article02 />  
 
-            {/* <footer>
+            <footer>
               <div className="row">
                 <div className="App-Footer">
                   <p>La Corpalif</p>
@@ -166,7 +166,7 @@ class App extends Component {
               <div className="column">
               <p>@ Corpalif - 2018</p>
               </div>
-            </footer> */}
+            </footer>
           </section>
 
         </div>
